@@ -1,5 +1,5 @@
 const btn = document.getElementById("btn");
-const elH1 = document.querySelector("h1");
+const elH1 = document.querySelector("p");
 const balls = document.querySelectorAll(".ball");
 
 const MIN_RESULT = 1;
@@ -55,8 +55,3 @@ btn.addEventListener("click", () => {
     setActiveBalls(numbers);
   }, 1500);
 });
-
-// NOWE FUNKCJE:
-// 1. zmienne połączone 3 inputami: liczba numerków, zakres min  i max
-// 2. liczba numerów generuje ilość kulk (div ball)
-// 3. inputy w tekscie jako ___
