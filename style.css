@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	bottom: 0;
+}
+
+body {
+	background: linear-gradient(180deg, #173568 0%, #229CD9 105.57%);
+	font-family: 'Inter', sans-serif;
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	padding: 0 16px;
+}
+
+.container {
+
+	flex-wrap: wrap;
+	max-width: 1000px;
+
+}
+
+h1 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	color: #F7AC00;
+
+}
+
+
+p {
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 48px;
+	color: #FFFFFF;
+	margin-bottom: 40px;
+	max-width: 760px;
+	margin: 40px auto 40px;
+}
+
+.balls {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 32px auto 56px;
+
+}
+
+.ball {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 128px;
+	height: 128px;
+	background: #1A558C;
+	margin: 8px 8px;
+	border-radius: 50%;
+	font-family: 'Inter';
+	font-weight: 900;
+	font-size: 72px;
+	font-family: 'Inter';
+	text-align: center;
+	color: #163261;
+}
+
+
+.ball.active {
+	background: linear-gradient(7.54deg, #F7ac00 7.94%, #FFC51B 48.8%, #FFE174 89.65%);
+	border: 1px solid #F7AC00;
+	font-size: 64px;
+}
+
+
+.btn {
+	padding: 20px 40px;
+	gap: 8px;
+	letter-spacing: 1px;
+	background: #F7AC00;
+	box-shadow: 0px 5px 4px rgba(23, 29, 106, 0.5);
+	border-radius: 8px;
+	font-family: 'Inter';
+	font-weight: 800;
+	font-size: 20px;
+	border: none;
+	text-align: center;
+
+	color: #FFFFFF;
+	text-shadow: 0px 1px 3px rgba(3, 8, 11, 0.712);
+	transition: .2s ease 0s;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.btn:active {
+	box-shadow: 0px 2px 4px rgba(23, 29, 106, 0.5);
+
+	transform: scale(0.89)
+}
+
+.clickhere {
+	position: relative;
+	width: 300px;
+	margin: 0 auto 24px;
+
+}
+
+img {
+	position: absolute;
+	top: 80px;
+	left: 20px;
+
+}
+
+.spinner-container {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.733);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9;
+}
+
+footer {
+	color: #f0f8ff;
+	font-weight: 400;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 16px 0;
+}
+
+footer a,
+footer a:visited {
+	color: #f0f8ff;
+
+}
+
+@media (max-width: 400px) {
+
+	p {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	h1 {
+		font-size: 14px;
+		margin-bottom: 32px;
+	}
+
+	.ball {
+		width: 80px;
+		height: 80px;
+
+		font-size: 48px;
+	}
+
+	.ball.active {
+		font-size: 40px;
+
+	}
+
+	footer {
+		display: none;
+	}
+
+}
+
+.hidden {
+	display: none !important;
+}
