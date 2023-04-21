@@ -10,7 +10,6 @@ body {
 	background: linear-gradient(180deg, #173568 0%, #229CD9 105.57%);
 	font-family: 'Inter', sans-serif;
 	display: flex;
-
 	align-items: center;
 	justify-content: center;
 	text-align: center;
@@ -140,7 +139,7 @@ footer {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	padding: 16px 0;
+	padding: 32px 0;
 }
 
 footer a,
@@ -174,11 +173,7 @@ footer a:visited {
 	}
 
 	footer {
-		display: none;
+		padding: 16px 0;
 	}
 
-}
-
-.hidden {
-	display: none !important;
 }
